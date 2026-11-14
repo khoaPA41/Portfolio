@@ -1,16 +1,21 @@
 <!doctype html>
 <html lang="vi">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' file:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com file:; font-src 'self' https://fonts.gstatic.com data: file:; img-src 'self' data: https://img.youtube.com https://i.ytimg.com file:; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://www.youtube.com;">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' 'unsafe-inline' file:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com file:; font-src 'self' https://fonts.gstatic.com data: file:; img-src 'self' data: https://img.youtube.com https://i.ytimg.com file:; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://www.youtube.com;">
   <title>Phạm Anh Khoa · Unity Game Developer Portfolio</title>
-  <meta name="description" content="Portfolio sản phẩm cá nhân của Phạm Anh Khoa, Unity Game Developer. Giới thiệu ba dự án Unity, kiến trúc kỹ thuật và năng lực lập trình C#.">
+  <meta name="description"
+    content="Portfolio sản phẩm cá nhân của Phạm Anh Khoa, Unity Game Developer. Giới thiệu ba dự án Unity, kiến trúc kỹ thuật và năng lực lập trình C#.">
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <noscript>
     <style>
@@ -22,9 +27,21 @@
         position: static !important;
         margin-bottom: 48px;
       }
-      .deck-viewport { display: flex !important; flex-direction: column !important; }
-      .deck-bar, .tech-strip { display: none !important; }
-      .reveal-init { opacity: 1 !important; transform: none !important; }
+
+      .deck-viewport {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+      .deck-bar,
+      .tech-strip {
+        display: none !important;
+      }
+
+      .reveal-init {
+        opacity: 1 !important;
+        transform: none !important;
+      }
     </style>
   </noscript>
   <script type="application/ld+json">
@@ -33,69 +50,76 @@
     "@type": "Person",
     "name": "Phạm Anh Khoa",
     "jobTitle": "Unity Game Developer",
-    "email": "mailto:anhkhoa.unity@gmail.com",
+    "email": "mailto:phamanhkhoa.4104@gmail.com",
     "sameAs": ["https://github.com/khoaPA41"],
     "knowsAbout": ["Unity", "C#", "Gameplay Programming", "Game Development"]
   }
   </script>
 </head>
+
 <body>
 
   <!-- Icon sprite -->
   <svg class="sr-sprite" aria-hidden="true" focusable="false">
     <symbol id="i-arrow-ur" viewBox="0 0 24 24">
-      <path d="M7 17 17 7"/><path d="M8 7h9v9"/>
+      <path d="M7 17 17 7" />
+      <path d="M8 7h9v9" />
     </symbol>
     <symbol id="i-arrow-d" viewBox="0 0 24 24">
-      <path d="M12 5v14"/><path d="m6 13 6 6 6-6"/>
+      <path d="M12 5v14" />
+      <path d="m6 13 6 6 6-6" />
     </symbol>
     <symbol id="i-arrow-u" viewBox="0 0 24 24">
-      <path d="M12 19V5"/><path d="m6 11 6-6 6 6"/>
+      <path d="M12 19V5" />
+      <path d="m6 11 6-6 6 6" />
     </symbol>
     <symbol id="i-chev-l" viewBox="0 0 24 24">
-      <path d="m15 6-6 6 6 6"/>
+      <path d="m15 6-6 6 6 6" />
     </symbol>
     <symbol id="i-chev-r" viewBox="0 0 24 24">
-      <path d="m9 6 6 6-6 6"/>
+      <path d="m9 6 6 6-6 6" />
     </symbol>
     <symbol id="i-play" viewBox="0 0 24 24">
-      <path d="M7 4.5v15l12-7.5z"/>
+      <path d="M7 4.5v15l12-7.5z" />
     </symbol>
     <symbol id="i-github" viewBox="0 0 24 24">
-      <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+      <path
+        d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
     </symbol>
     <symbol id="i-globe" viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="9"/>
-      <path d="M3.6 9h16.8M3.6 15h16.8"/>
-      <path d="M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3.6 9h16.8M3.6 15h16.8" />
+      <path d="M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18" />
     </symbol>
     <symbol id="i-download" viewBox="0 0 24 24">
-      <path d="M12 3v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/>
+      <path d="M12 3v11" />
+      <path d="m7 10 5 5 5-5" />
+      <path d="M5 20h14" />
     </symbol>
     <symbol id="i-mobile" viewBox="0 0 24 24">
-      <rect x="7" y="2.5" width="10" height="19" rx="2.5"/>
-      <path d="M11 18h2"/>
+      <rect x="7" y="2.5" width="10" height="19" rx="2.5" />
+      <path d="M11 18h2" />
     </symbol>
     <symbol id="i-mail" viewBox="0 0 24 24">
-      <rect x="3" y="5" width="18" height="14" rx="2"/>
-      <path d="m3.5 7.5 8.5 6 8.5-6"/>
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="m3.5 7.5 8.5 6 8.5-6" />
     </symbol>
     <symbol id="i-folder" viewBox="0 0 24 24">
-      <path d="M3 7a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <path d="M3 7a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
     </symbol>
     <symbol id="i-pen" viewBox="0 0 24 24">
-      <path d="M12 20h9"/>
-      <path d="M16.4 3.6a2.05 2.05 0 0 1 2.9 2.9L7.5 18.3 3.5 19.5l1.2-4Z"/>
+      <path d="M12 20h9" />
+      <path d="M16.4 3.6a2.05 2.05 0 0 1 2.9 2.9L7.5 18.3 3.5 19.5l1.2-4Z" />
     </symbol>
     <symbol id="i-chip" viewBox="0 0 24 24">
-      <rect x="6" y="6" width="12" height="12" rx="2"/>
-      <path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/>
+      <rect x="6" y="6" width="12" height="12" rx="2" />
+      <path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4" />
     </symbol>
     <symbol id="i-refresh" viewBox="0 0 24 24">
-      <path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/>
-      <path d="M21 3v5h-5"/>
-      <path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/>
-      <path d="M3 21v-5h5"/>
+      <path d="M3 12a9 9 0 0 1 15.5-6.2L21 8" />
+      <path d="M21 3v5h-5" />
+      <path d="M21 12a9 9 0 0 1-15.5 6.2L3 16" />
+      <path d="M3 21v-5h5" />
     </symbol>
   </svg>
 
@@ -109,7 +133,8 @@
 
   <header id="site-header">
     <a class="brand" href="#intro" title="Trang chủ Phạm Anh Khoa">
-      <img src="assets/logo.png" alt="Logo PAX của Phạm Anh Khoa" class="brand-logo" width="38" height="38" decoding="async">
+      <img src="assets/logo.png" alt="Logo PAX của Phạm Anh Khoa" class="brand-logo" width="38" height="38"
+        decoding="async">
       <span class="brand-name">Phạm Anh Khoa</span>
       <span class="brand-tag">Unity Developer</span>
     </a>
@@ -142,11 +167,15 @@
           <div class="hero-actions">
             <a class="btn btn-solid" href="#projects-section" data-goto-slide="0">
               Xem dự án
-              <svg class="icon"><use href="#i-arrow-ur"/></svg>
+              <svg class="icon">
+                <use href="#i-arrow-ur" />
+              </svg>
             </a>
             <a class="btn btn-ghost" href="#thanks">
               Liên hệ
-              <svg class="icon"><use href="#i-arrow-d"/></svg>
+              <svg class="icon">
+                <use href="#i-arrow-d" />
+              </svg>
             </a>
           </div>
         </div>
@@ -159,7 +188,8 @@
           <div class="planet-ring" aria-hidden="true"></div>
           <div class="moon-halo" aria-hidden="true"></div>
           <div class="avatar-moon">
-            <img src="assets/avatar.jpg" alt="Ảnh chân dung Phạm Anh Khoa" class="avatar-img" width="320" height="320" decoding="async" fetchpriority="high">
+            <img src="assets/avatar.jpg" alt="Ảnh chân dung Phạm Anh Khoa" class="avatar-img" width="320" height="320"
+              decoding="async" fetchpriority="high">
           </div>
           <p class="stage-caption">Unity Developer</p>
         </div>
@@ -167,10 +197,14 @@
         <div class="tech-strip" role="presentation">
           <div class="tech-track">
             <div class="tech-group">
-              <span>Unity</span><i>/</i><span>C#</span><i>/</i><span>FSM</span><i>/</i><span>Behavior Tree</span><i>/</i><span>ScriptableObject</span><i>/</i><span>New Input System</span><i>/</i><span>Cinemachine</span><i>/</i><span>Timeline</span><i>/</i><span>Git</span>
+              <span>Unity</span><i>/</i><span>C#</span><i>/</i><span>FSM</span><i>/</i><span>Behavior
+                Tree</span><i>/</i><span>ScriptableObject</span><i>/</i><span>New Input
+                System</span><i>/</i><span>Cinemachine</span><i>/</i><span>Timeline</span><i>/</i><span>Git</span>
             </div>
             <div class="tech-group" aria-hidden="true">
-              <span>Unity</span><i>/</i><span>C#</span><i>/</i><span>FSM</span><i>/</i><span>Behavior Tree</span><i>/</i><span>ScriptableObject</span><i>/</i><span>New Input System</span><i>/</i><span>Cinemachine</span><i>/</i><span>Timeline</span><i>/</i><span>Git</span>
+              <span>Unity</span><i>/</i><span>C#</span><i>/</i><span>FSM</span><i>/</i><span>Behavior
+                Tree</span><i>/</i><span>ScriptableObject</span><i>/</i><span>New Input
+                System</span><i>/</i><span>Cinemachine</span><i>/</i><span>Timeline</span><i>/</i><span>Git</span>
             </div>
           </div>
         </div>
@@ -195,23 +229,32 @@
 
       <div class="deck-bar">
         <div class="project-tabs" role="tablist" aria-label="Danh sách dự án">
-          <button class="tab-btn is-active" role="tab" aria-selected="true" data-index="0" id="tab-0" aria-controls="slide-0" tabindex="0" type="button">
+          <button class="tab-btn is-active" role="tab" aria-selected="true" data-index="0" id="tab-0"
+            aria-controls="slide-0" tabindex="0" type="button">
             <span class="tab-num">01</span> RE-END
           </button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-index="1" id="tab-1" aria-controls="slide-1" tabindex="-1" type="button">
+          <button class="tab-btn" role="tab" aria-selected="false" data-index="1" id="tab-1" aria-controls="slide-1"
+            tabindex="-1" type="button">
             <span class="tab-num">02</span> Conquer the Stars
           </button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-index="2" id="tab-2" aria-controls="slide-2" tabindex="-1" type="button">
+          <button class="tab-btn" role="tab" aria-selected="false" data-index="2" id="tab-2" aria-controls="slide-2"
+            tabindex="-1" type="button">
             <span class="tab-num">03</span> DABDA
           </button>
         </div>
         <div class="deck-nav">
           <span class="deck-counter" id="slide-counter">01 / 03</span>
-          <button class="nav-arrow" id="prev-slide-btn" type="button" title="Dự án trước (mũi tên trái)" aria-label="Dự án trước">
-            <svg class="icon"><use href="#i-chev-l"/></svg>
+          <button class="nav-arrow" id="prev-slide-btn" type="button" title="Dự án trước (mũi tên trái)"
+            aria-label="Dự án trước">
+            <svg class="icon">
+              <use href="#i-chev-l" />
+            </svg>
           </button>
-          <button class="nav-arrow" id="next-slide-btn" type="button" title="Dự án kế tiếp (mũi tên phải)" aria-label="Dự án kế tiếp">
-            <svg class="icon"><use href="#i-chev-r"/></svg>
+          <button class="nav-arrow" id="next-slide-btn" type="button" title="Dự án kế tiếp (mũi tên phải)"
+            aria-label="Dự án kế tiếp">
+            <svg class="icon">
+              <use href="#i-chev-r" />
+            </svg>
           </button>
         </div>
       </div>
@@ -219,14 +262,19 @@
       <div class="deck-viewport" id="deck-viewport">
 
         <!-- SLIDE 1 : RE-END -->
-        <article class="project-slide is-active" id="slide-0" data-project-id="reend" role="tabpanel" aria-labelledby="tab-0">
+        <article class="project-slide is-active" id="slide-0" data-project-id="reend" role="tabpanel"
+          aria-labelledby="tab-0">
           <div class="project-grid">
             <div class="project-media">
               <div class="video-frame" id="video-box-reend">
                 <noscript>
-                  <div class="video-fallback" style="background-image: linear-gradient(rgba(10,10,15,0.72), rgba(10,10,15,0.9)), url('https://img.youtube.com/vi/ITwK9bQ_CvQ/hqdefault.jpg');">
-                    <a href="https://www.youtube.com/watch?v=ITwK9bQ_CvQ" target="_blank" rel="noopener noreferrer" class="play-orb" title="Xem video gameplay RE-END trên YouTube">
-                      <svg class="icon icon-fill"><use href="#i-play"/></svg>
+                  <div class="video-fallback"
+                    style="background-image: linear-gradient(rgba(10,10,15,0.72), rgba(10,10,15,0.9)), url('https://img.youtube.com/vi/ITwK9bQ_CvQ/hqdefault.jpg');">
+                    <a href="https://www.youtube.com/watch?v=ITwK9bQ_CvQ" target="_blank" rel="noopener noreferrer"
+                      class="play-orb" title="Xem video gameplay RE-END trên YouTube">
+                      <svg class="icon icon-fill">
+                        <use href="#i-play" />
+                      </svg>
                     </a>
                     <h4>Video Gameplay RE-END</h4>
                     <p>Bấm nút phát để xem trực tiếp trên YouTube</p>
@@ -237,11 +285,13 @@
               <details class="video-config" hidden>
                 <summary>Gắn / đổi link YouTube cho dự án này</summary>
                 <form class="yt-form" data-target="reend">
-                  <input type="text" value="https://youtu.be/ITwK9bQ_CvQ" placeholder="Dán link YouTube hoặc Video ID" required aria-label="Link video YouTube hoặc Video ID">
+                  <input type="text" value="https://youtu.be/ITwK9bQ_CvQ" placeholder="Dán link YouTube hoặc Video ID"
+                    required aria-label="Link video YouTube hoặc Video ID">
                   <button class="btn btn-ghost btn-sm" type="submit">Cập nhật</button>
                 </form>
                 <div class="yt-status" aria-live="polite">
-                  <a href="https://www.youtube.com/watch?v=ITwK9bQ_CvQ" target="_blank" rel="noopener noreferrer">Xem video trực tiếp trên YouTube</a>
+                  <a href="https://www.youtube.com/watch?v=ITwK9bQ_CvQ" target="_blank" rel="noopener noreferrer">Xem
+                    video trực tiếp trên YouTube</a>
                 </div>
               </details>
 
@@ -253,15 +303,25 @@
               </div>
 
               <div class="project-actions">
-                <a class="btn btn-solid" href="https://github.com/khoaPA41/Unity_3D_Boss-Rush" target="_blank" rel="noopener noreferrer">
-                  <svg class="icon icon-fill"><use href="#i-github"/></svg>
+                <a class="btn btn-solid" href="https://github.com/khoaPA41/Unity_3D_Boss-Rush" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg class="icon icon-fill">
+                    <use href="#i-github" />
+                  </svg>
                   GitHub Repository
-                  <svg class="icon icon-sm"><use href="#i-arrow-ur"/></svg>
+                  <svg class="icon icon-sm">
+                    <use href="#i-arrow-ur" />
+                  </svg>
                 </a>
-                <a class="btn btn-ghost" href="https://pakbot4124.itch.io/re-en-web" target="_blank" rel="noopener noreferrer">
-                  <svg class="icon"><use href="#i-globe"/></svg>
+                <a class="btn btn-ghost" href="https://pakbot4124.itch.io/re-en-web" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg class="icon">
+                    <use href="#i-globe" />
+                  </svg>
                   Chơi bản Web
-                  <svg class="icon icon-sm"><use href="#i-arrow-ur"/></svg>
+                  <svg class="icon icon-sm">
+                    <use href="#i-arrow-ur" />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -278,7 +338,9 @@
 
               <div class="panel">
                 <h4 class="panel-title">
-                  <svg class="icon"><use href="#i-pen"/></svg>
+                  <svg class="icon">
+                    <use href="#i-pen" />
+                  </svg>
                   Phần triển khai
                 </h4>
                 <ul class="contrib">
@@ -299,16 +361,20 @@
 
               <div class="panel">
                 <h4 class="panel-title">
-                  <svg class="icon"><use href="#i-chip"/></svg>
+                  <svg class="icon">
+                    <use href="#i-chip" />
+                  </svg>
                   Hai điểm kỹ thuật
                 </h4>
                 <div class="tech-note">
                   <b><small>01</small> Player FSM &amp; Input Buffering</b>
-                  <p>Tách hành vi thành các state; lưu input trong thời gian ngắn và xử lý khi state cho phép nối combo hoặc chuyển hành động.</p>
+                  <p>Tách hành vi thành các state; lưu input trong thời gian ngắn và xử lý khi state cho phép nối combo
+                    hoặc chuyển hành động.</p>
                 </div>
                 <div class="tech-note">
                   <b><small>02</small> Boss Behavior Tree</b>
-                  <p>Dùng Selector và Sequence để xét các nhánh theo thứ tự ưu tiên, dựa trên khoảng cách, máu và điều kiện chuyển phase.</p>
+                  <p>Dùng Selector và Sequence để xét các nhánh theo thứ tự ưu tiên, dựa trên khoảng cách, máu và điều
+                    kiện chuyển phase.</p>
                 </div>
               </div>
             </div>
@@ -316,14 +382,19 @@
         </article>
 
         <!-- SLIDE 2 : CONQUER THE STARS -->
-        <article class="project-slide" id="slide-1" data-project-id="stars" role="tabpanel" aria-labelledby="tab-1" aria-hidden="true" inert>
+        <article class="project-slide" id="slide-1" data-project-id="stars" role="tabpanel" aria-labelledby="tab-1"
+          aria-hidden="true" inert>
           <div class="project-grid">
             <div class="project-media">
               <div class="video-frame" id="video-box-stars">
                 <noscript>
-                  <div class="video-fallback" style="background-image: linear-gradient(rgba(10,10,15,0.72), rgba(10,10,15,0.9)), url('https://img.youtube.com/vi/g3vkVFKuGm8/hqdefault.jpg');">
-                    <a href="https://www.youtube.com/watch?v=g3vkVFKuGm8" target="_blank" rel="noopener noreferrer" class="play-orb" title="Xem video gameplay Conquer the Stars trên YouTube">
-                      <svg class="icon icon-fill"><use href="#i-play"/></svg>
+                  <div class="video-fallback"
+                    style="background-image: linear-gradient(rgba(10,10,15,0.72), rgba(10,10,15,0.9)), url('https://img.youtube.com/vi/g3vkVFKuGm8/hqdefault.jpg');">
+                    <a href="https://www.youtube.com/watch?v=g3vkVFKuGm8" target="_blank" rel="noopener noreferrer"
+                      class="play-orb" title="Xem video gameplay Conquer the Stars trên YouTube">
+                      <svg class="icon icon-fill">
+                        <use href="#i-play" />
+                      </svg>
                     </a>
                     <h4>Video Gameplay Conquer the Stars</h4>
                     <p>Bấm nút phát để xem trực tiếp trên YouTube</p>
@@ -334,11 +405,13 @@
               <details class="video-config" hidden>
                 <summary>Gắn / đổi link YouTube cho dự án này</summary>
                 <form class="yt-form" data-target="stars">
-                  <input type="text" value="https://youtu.be/g3vkVFKuGm8" placeholder="Dán link YouTube hoặc Video ID" required aria-label="Link video YouTube hoặc Video ID">
+                  <input type="text" value="https://youtu.be/g3vkVFKuGm8" placeholder="Dán link YouTube hoặc Video ID"
+                    required aria-label="Link video YouTube hoặc Video ID">
                   <button class="btn btn-ghost btn-sm" type="submit">Cập nhật</button>
                 </form>
                 <div class="yt-status" aria-live="polite">
-                  <a href="https://www.youtube.com/watch?v=g3vkVFKuGm8" target="_blank" rel="noopener noreferrer">Xem video trực tiếp trên YouTube</a>
+                  <a href="https://www.youtube.com/watch?v=g3vkVFKuGm8" target="_blank" rel="noopener noreferrer">Xem
+                    video trực tiếp trên YouTube</a>
                 </div>
               </details>
 
@@ -350,15 +423,25 @@
               </div>
 
               <div class="project-actions">
-                <a class="btn btn-solid" href="https://github.com/khoaPA41/Unity-3D-Project_Conquer-The-Stars" target="_blank" rel="noopener noreferrer">
-                  <svg class="icon icon-fill"><use href="#i-github"/></svg>
+                <a class="btn btn-solid" href="https://github.com/khoaPA41/Unity-3D-Project_Conquer-The-Stars"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg class="icon icon-fill">
+                    <use href="#i-github" />
+                  </svg>
                   GitHub Repository
-                  <svg class="icon icon-sm"><use href="#i-arrow-ur"/></svg>
+                  <svg class="icon icon-sm">
+                    <use href="#i-arrow-ur" />
+                  </svg>
                 </a>
-                <a class="btn btn-ghost" href="https://pakbot4124.itch.io/conquer-the-stars" target="_blank" rel="noopener noreferrer">
-                  <svg class="icon"><use href="#i-mobile"/></svg>
+                <a class="btn btn-ghost" href="https://pakbot4124.itch.io/conquer-the-stars" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg class="icon">
+                    <use href="#i-mobile" />
+                  </svg>
                   Tải bản Android
-                  <svg class="icon icon-sm"><use href="#i-arrow-ur"/></svg>
+                  <svg class="icon icon-sm">
+                    <use href="#i-arrow-ur" />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -375,7 +458,9 @@
 
               <div class="panel">
                 <h4 class="panel-title">
-                  <svg class="icon"><use href="#i-pen"/></svg>
+                  <svg class="icon">
+                    <use href="#i-pen" />
+                  </svg>
                   Phần triển khai
                 </h4>
                 <ul class="contrib">
@@ -396,12 +481,15 @@
 
               <div class="panel">
                 <h4 class="panel-title">
-                  <svg class="icon"><use href="#i-chip"/></svg>
+                  <svg class="icon">
+                    <use href="#i-chip" />
+                  </svg>
                   Hai điểm kỹ thuật
                 </h4>
                 <div class="tech-note">
                   <b><small>01</small> Battle &amp; Actor State Machines</b>
-                  <p>Battle state điều phối lượt và chờ hành động hoàn thành; actor state xử lý hành vi và animation của từng nhân vật.</p>
+                  <p>Battle state điều phối lượt và chờ hành động hoàn thành; actor state xử lý hành vi và animation của
+                    từng nhân vật.</p>
                 </div>
                 <div class="tech-note">
                   <b><small>02</small> Weighted Target Evaluation</b>
@@ -413,14 +501,19 @@
         </article>
 
         <!-- SLIDE 3 : DABDA -->
-        <article class="project-slide" id="slide-2" data-project-id="dabda" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true" inert>
+        <article class="project-slide" id="slide-2" data-project-id="dabda" role="tabpanel" aria-labelledby="tab-2"
+          aria-hidden="true" inert>
           <div class="project-grid">
             <div class="project-media">
               <div class="video-frame" id="video-box-dabda">
                 <noscript>
-                  <div class="video-fallback" style="background-image: linear-gradient(rgba(10,10,15,0.72), rgba(10,10,15,0.9)), url('https://img.youtube.com/vi/3XokwoHEwiI/hqdefault.jpg');">
-                    <a href="https://www.youtube.com/watch?v=3XokwoHEwiI" target="_blank" rel="noopener noreferrer" class="play-orb" title="Xem video gameplay DABDA trên YouTube">
-                      <svg class="icon icon-fill"><use href="#i-play"/></svg>
+                  <div class="video-fallback"
+                    style="background-image: linear-gradient(rgba(10,10,15,0.72), rgba(10,10,15,0.9)), url('https://img.youtube.com/vi/3XokwoHEwiI/hqdefault.jpg');">
+                    <a href="https://www.youtube.com/watch?v=3XokwoHEwiI" target="_blank" rel="noopener noreferrer"
+                      class="play-orb" title="Xem video gameplay DABDA trên YouTube">
+                      <svg class="icon icon-fill">
+                        <use href="#i-play" />
+                      </svg>
                     </a>
                     <h4>Video Gameplay DABDA</h4>
                     <p>Bấm nút phát để xem trực tiếp trên YouTube</p>
@@ -431,11 +524,13 @@
               <details class="video-config" hidden>
                 <summary>Gắn / đổi link YouTube cho dự án này</summary>
                 <form class="yt-form" data-target="dabda">
-                  <input type="text" value="https://youtu.be/3XokwoHEwiI" placeholder="Dán link YouTube hoặc Video ID" required aria-label="Link video YouTube hoặc Video ID">
+                  <input type="text" value="https://youtu.be/3XokwoHEwiI" placeholder="Dán link YouTube hoặc Video ID"
+                    required aria-label="Link video YouTube hoặc Video ID">
                   <button class="btn btn-ghost btn-sm" type="submit">Cập nhật</button>
                 </form>
                 <div class="yt-status" aria-live="polite">
-                  <a href="https://www.youtube.com/watch?v=3XokwoHEwiI" target="_blank" rel="noopener noreferrer">Xem video trực tiếp trên YouTube</a>
+                  <a href="https://www.youtube.com/watch?v=3XokwoHEwiI" target="_blank" rel="noopener noreferrer">Xem
+                    video trực tiếp trên YouTube</a>
                 </div>
               </details>
 
@@ -447,15 +542,25 @@
               </div>
 
               <div class="project-actions">
-                <a class="btn btn-solid" href="https://github.com/khoaPA41/DABDA_PANDORA" target="_blank" rel="noopener noreferrer">
-                  <svg class="icon icon-fill"><use href="#i-github"/></svg>
+                <a class="btn btn-solid" href="https://github.com/khoaPA41/DABDA_PANDORA" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg class="icon icon-fill">
+                    <use href="#i-github" />
+                  </svg>
                   GitHub Repository
-                  <svg class="icon icon-sm"><use href="#i-arrow-ur"/></svg>
+                  <svg class="icon icon-sm">
+                    <use href="#i-arrow-ur" />
+                  </svg>
                 </a>
-                <a class="btn btn-ghost" href="https://pakbot4124.itch.io/dabda-pandora-web" target="_blank" rel="noopener noreferrer">
-                  <svg class="icon"><use href="#i-globe"/></svg>
+                <a class="btn btn-ghost" href="https://pakbot4124.itch.io/dabda-pandora-web" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg class="icon">
+                    <use href="#i-globe" />
+                  </svg>
                   Chơi bản Web
-                  <svg class="icon icon-sm"><use href="#i-arrow-ur"/></svg>
+                  <svg class="icon icon-sm">
+                    <use href="#i-arrow-ur" />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -472,7 +577,9 @@
 
               <div class="panel">
                 <h4 class="panel-title">
-                  <svg class="icon"><use href="#i-pen"/></svg>
+                  <svg class="icon">
+                    <use href="#i-pen" />
+                  </svg>
                   Phần triển khai
                 </h4>
                 <ul class="contrib">
@@ -493,16 +600,20 @@
 
               <div class="panel">
                 <h4 class="panel-title">
-                  <svg class="icon"><use href="#i-chip"/></svg>
+                  <svg class="icon">
+                    <use href="#i-chip" />
+                  </svg>
                   Hai điểm kỹ thuật
                 </h4>
                 <div class="tech-note">
                   <b><small>01</small> Trigger-based Camera Switching</b>
-                  <p>Trigger cung cấp cấu hình; controller bật camera tương ứng và lưu camera trước đó để xử lý chuyển đổi.</p>
+                  <p>Trigger cung cấp cấu hình; controller bật camera tương ứng và lưu camera trước đó để xử lý chuyển
+                    đổi.</p>
                 </div>
                 <div class="tech-note">
                   <b><small>02</small> Sequential Puzzle Interaction</b>
-                  <p>Nhận event tương tác, kiểm tra thứ tự kích hoạt nút, phản hồi đúng/sai và kích hoạt cơ quan khi hoàn thành chuỗi.</p>
+                  <p>Nhận event tương tác, kiểm tra thứ tự kích hoạt nút, phản hồi đúng/sai và kích hoạt cơ quan khi
+                    hoàn thành chuỗi.</p>
                 </div>
               </div>
             </div>
@@ -547,23 +658,31 @@
         <div class="contact-cell">
           <span class="contact-label">Email</span>
           <a class="contact-link" href="mailto:anhkhoa.unity@gmail.com">
-            <svg class="icon"><use href="#i-mail"/></svg>
+            <svg class="icon">
+              <use href="#i-mail" />
+            </svg>
             anhkhoa.unity@gmail.com
           </a>
         </div>
         <div class="contact-cell">
           <span class="contact-label">GitHub</span>
           <a class="contact-link" href="https://github.com/khoaPA41" target="_blank" rel="noopener noreferrer">
-            <svg class="icon icon-fill"><use href="#i-github"/></svg>
+            <svg class="icon icon-fill">
+              <use href="#i-github" />
+            </svg>
             github.com/khoaPA41
-            <svg class="icon icon-sm"><use href="#i-arrow-ur"/></svg>
+            <svg class="icon icon-sm">
+              <use href="#i-arrow-ur" />
+            </svg>
           </a>
         </div>
       </address>
 
       <div class="closing-actions">
         <a class="btn btn-ghost" href="#intro">
-          <svg class="icon"><use href="#i-arrow-u"/></svg>
+          <svg class="icon">
+            <use href="#i-arrow-u" />
+          </svg>
           Về đầu trang
         </a>
       </div>
@@ -586,4 +705,5 @@
   <script src="assets/js/app.js" defer></script>
   <script src="assets/js/acts.js" defer></script>
 </body>
+
 </html>
